@@ -14,6 +14,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+// Set the application to listen on port 8080
+builder.WebHost.UseUrls("http://+:8080");
+
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
